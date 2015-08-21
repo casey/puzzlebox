@@ -1,7 +1,7 @@
 puzzlebox
 ---------
 
-It's out there, somewhere, listening to the public internet.
+It's out there, behind some IPv4 address, listening to the public internet.
 
 The secret is the private key that corresponds to this address:
 
