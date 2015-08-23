@@ -1,5 +1,5 @@
 default:
-	sudo ./main THIS_IS_NOT_THE_SECRET >> log
+	./main THIS_IS_NOT_THE_SECRET >> log
 
 test:
 	echo 'Hello?' | nc 127.0.0.1 49150

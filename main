@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.7
 
-import atexit, socket, sys
+import atexit, socket, sys, thread
 
 port = 49150
 password = "I am your radiant spark."
@@ -12,13 +12,19 @@ s.listen(5)
 
 atexit.register(lambda: s.close())
 
-while 1:
-  c, a = s.accept()
-  message = c.recv(4096)
+def handle(s, a):
+  message = s.recv(4096)
   print "{}:{} {}".format(a[0], a[1], message.strip())
   sys.stdout.flush()
   if message.strip() == password:
-    c.send(secret + "\n")
+    s.send(secret + "\n")
   else:
-    c.send("Nope.\n")
-  c.close()
+    s.send("Nope.\n")
+  s.close()
+
+while 1:
+  try:
+    args = s.accept()
+    thread.start_new_thread(handle, args)
+  except socket.error as e:
+    print "Exception: {}".format(e)
