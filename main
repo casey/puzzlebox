@@ -2,7 +2,7 @@
 
 import atexit, socket, sys
 
-port = 80
+port = 49150
 password = "I am your radiant spark."
 secret = sys.argv[1]
 
