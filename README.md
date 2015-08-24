@@ -11,4 +11,4 @@ glhf
 
 ...
 
-[Snagged!](blockchain.info/search/1CXzz4y2KbG37KMnBim62yTKgKJ9io6DMT)
+[Snagged!](http://blockchain.info/search/1CXzz4y2KbG37KMnBim62yTKgKJ9io6DMT)
