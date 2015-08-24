@@ -8,3 +8,7 @@ If it receives the message "I am your radiant spark.", it will respond with the 
 `1CXzz4y2KbG37KMnBim62yTKgKJ9io6DMT`
 
 glhf
+
+...
+
+[Snagged!](blockchain.info/search/1CXzz4y2KbG37KMnBim62yTKgKJ9io6DMT)
